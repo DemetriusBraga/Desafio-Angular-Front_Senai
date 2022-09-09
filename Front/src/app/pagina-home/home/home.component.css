@@ -1,0 +1,33 @@
+.height{
+  height: 650px;
+}
+
+img {
+  width: 100vw;
+  height: 77vh;
+  margin-top: 10%;
+
+}
+
+.card-div {
+  width: 100vw;
+  height: 83vh;
+
+}
+
+.card {
+  width: 43vw;
+  height: 75vh;
+  margin-top: 15%;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+h5 {
+  color: #646464;
+}
+
+h4 {
+  color: #3db0f7;
+}

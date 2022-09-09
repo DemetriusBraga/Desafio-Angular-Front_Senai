@@ -1,0 +1,42 @@
+table {
+  position: fixed;
+  margin-bottom: 0;
+  bottom: 0;
+}
+
+thead{
+  color: white;
+}
+
+input {
+  width: 80%;
+
+}
+
+.font-weight{
+  font-weight: 450;
+}
+
+
+.th1 {
+  width: 25%;
+  background-color: #0261b4;
+  border: solid thin black
+}
+
+.th2 {
+  width: 15%;
+  background-color: #0261b4;
+  border: solid thin black
+}
+
+
+td {
+  font-weight: 700;
+  border-bottom: 0;
+}
+
+.tdVazio{
+  background-color: #0261b4;
+  border: solid thin black
+}

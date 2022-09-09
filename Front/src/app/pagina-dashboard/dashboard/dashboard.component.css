@@ -1,0 +1,35 @@
+h1 {
+  margin-top: 3.5%;
+  color: #0261b4;
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 3%;
+  border-color: #0261b4;
+}
+
+.card {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 2%;
+  max-width: 250px;
+}
+
+.card-body {
+  height: 110px;
+}
+
+h5 {
+  color: #646464;
+  font-weight: bold;
+}
+
+option {
+  color: #646464;
+}
+
+select {
+  color: #646464;
+  font-weight: bold;
+}

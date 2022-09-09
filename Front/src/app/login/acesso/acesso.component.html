@@ -1,0 +1,57 @@
+<div class="d-flex justify-content-center div-logo fixed-top mt-4">
+  <img class="img-logo" src="assets/img/ford-logo.png" alt="Logo da Ford" />
+</div>
+
+<h4 class="text-center">Boas-vindas</h4>
+
+<form class="form mt-5" (ngSubmit)="login()" #loginForm="ngForm">
+  <div class="form-group mb-2">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Insira o usuário"
+      [(ngModel)]="usuario"
+      name="usuario"
+      #campoUsuario="ngModel"
+      required
+    />
+    <app-mensagem
+      *ngIf="campoUsuario.invalid && campoUsuario.touched"
+      mensagem="Usuário obrigatório"
+    ></app-mensagem>
+  </div>
+
+  <div class="form-group mb-2">
+    <input
+      type="password"
+      class="form-control"
+      placeholder="Insira sua senha"
+      [(ngModel)]="senha"
+      name="senha"
+      #campoSenha="ngModel"
+      required
+    />
+    <app-mensagem
+      *ngIf="campoSenha.invalid && campoSenha.touched"
+      mensagem="Senha obrigatória"
+    ></app-mensagem>
+  </div>
+
+  <div class="form-group form-switch mt-4 mb-2">
+    <input
+      class="form-check-input position-relative start-100"
+      type="checkbox"
+    />
+    <label class="form-check-label position-relative start-50 ms-5"
+      >Logar automaticamente</label
+    >
+  </div>
+
+  <button
+    type="submit"
+    class="w-100 btn btn-primary btn-block"
+    [disabled]="loginForm.invalid"
+  >
+    Login
+  </button>
+</form>

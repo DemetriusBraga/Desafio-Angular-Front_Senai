@@ -1,0 +1,70 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col" class="font-weight th1">Código - Vin</th>
+      <th scope="col" class="font-weight th2">Odômetro</th>
+      <th scope="col" class="font-weight th2">Nível de Combustível</th>
+      <th scope="col" class="font-weight th2">Status</th>
+      <th scope="col" class="font-weight th2">Lat.</th>
+      <th scope="col" class="font-weight th2">Long.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <input
+          class="font-weight"
+          type="text"
+          placeholder="Insira o código do veículo"
+          [formControl]="tabelaDeDados"
+          [(ngModel)]="valorDoInput"
+        />
+      </td>
+      <td *ngIf="filtroPeloInput$ | async as veiculoDados; else elseBlock">
+        <div *ngIf="valorDoInput.length >= 3; elseBlock">
+          <div *ngFor="let veiculoDado of veiculoDados">
+            {{ veiculoDado.odometer }} Km
+          </div>
+        </div>
+      </td>
+
+      <td *ngIf="filtroPeloInput$ | async as veiculoDados; else elseBlock">
+        <div *ngIf="valorDoInput.length >= 3; elseBlock">
+          <div *ngFor="let veiculoDado of veiculoDados">
+            {{ veiculoDado.fuelLevel }}%
+          </div>
+        </div>
+      </td>
+
+      <td *ngIf="filtroPeloInput$ | async as veiculoDados; else elseBlock">
+        <div *ngIf="valorDoInput.length >= 3; elseBlock">
+          <div scope="col" *ngFor="let veiculoDado of veiculoDados">
+            {{ veiculoDado.status }}
+          </div>
+        </div>
+      </td>
+
+      <td *ngIf="filtroPeloInput$ | async as veiculoDados; else elseBlock">
+        <div *ngIf="valorDoInput.length >= 3; elseBlock">
+          <div scope="col" *ngFor="let veiculoDado of veiculoDados">
+            {{ veiculoDado.lat }}
+          </div>
+        </div>
+      </td>
+
+      <td *ngIf="filtroPeloInput$ | async as veiculoDados; else elseBlock">
+        <div *ngIf="valorDoInput.length >= 3; elseBlock">
+          <div scope="col" *ngFor="let veiculoDado of veiculoDados">
+            {{ veiculoDado.long }}
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    <tr class="tdVazio">
+      <td colspan="6"></td>
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #elseBlock></ng-template>

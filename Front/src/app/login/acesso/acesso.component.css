@@ -1,0 +1,25 @@
+button {
+  width: fit-content;
+  background-color: #a9a9a9;
+}
+
+.img-logo{
+  width: 180px;
+  height: 65px;
+}
+
+.div-logo {
+  margin-left: 50%;
+}
+
+form {
+  width: 600px;
+}
+
+h4 {
+  color: rgb(7, 175, 7);
+}
+
+.form-check-label {
+  color: #565656;
+}
