@@ -1,6 +1,6 @@
 # DesafioAngular
 
-Esse projeto foi o desafio da sprint de angular do [Programa de Formação em TI](https://portal.formacaoti.senaicimatec.com.br/) do  do SENAI CIMATEC.
+Esse projeto foi o desafio da sprint de angular do [Programa de Formação em TI](https://portal.formacaoti.senaicimatec.com.br/) do SENAI CIMATEC.
 
 A proposta do desafio era desenvolver 3 páginas(login, home, dashboard).
 
